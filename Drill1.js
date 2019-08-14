@@ -16,3 +16,14 @@ function createMyObject() {
      obj.bang = 'bang';
      return obj;
  }
+
+ function personMaker() {
+    let person = {
+      firstName: 'Paul',
+      lastName: 'Jones',
+      fullName: function(){
+          return `${this.firstName} ${this.lastName}`;
+      },
+    };
+    return person;
+  }
